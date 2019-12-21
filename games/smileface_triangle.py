@@ -41,6 +41,7 @@ radius = 20
 arcade.draw_circle_filled(x, y, radius, arcade.color.BLACK)
 
 
+
 # Draw the smile
 x = 300
 y = 260
@@ -50,17 +51,17 @@ start_angle = 190
 end_angle = 350 
 arcade.draw_arc_outline(x, y, width, height, arcade.color.BLACK, start_angle, end_angle, 10)
 
+# Draw the smile
+x = 300
+y = 280
+width = 60
+height = 50
+start_angle = 210
+end_angle = 330
+arcade.draw_arc_outline(x, y, width, height, arcade.color.BLACK, start_angle, end_angle, 10)
 
 
 
-#draw line
-start_x = 250
-start_y = 250
-end_x = 350
-end_y = 250
-color = arcade.color.BLACK
-line_width = 10
-arcade.draw_line(start_x, start_y, end_x, end_y, color, line_width)
 
 # Finish drawing and display the result
 arcade.finish_render()
