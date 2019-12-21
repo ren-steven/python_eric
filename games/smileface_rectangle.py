@@ -5,7 +5,7 @@ SCREEN_WIDTH = 600
 SCREEN_HEIGHT = 600
 
 #Open the window, Set the window title and dimentions(width and height)
-arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, "Drawing Example")
+arcade.open_window(SCREEN_WIDTH, SCREEN_HEIGHT, "Rectangle With Face")
 
 # Set the background color to white. 
 # For a list of named colors see: 
@@ -20,26 +20,40 @@ arcade.start_render()
 # Draw the face
 x = 300
 y = 300
-
-radius = 200
-arcade.draw_circle_filled(x, y, radius, arcade.color.YELLOW)
+height =300
+width = 300
+tilt_angle = 0
+arcade.draw_rectangle_filled(x, y,width ,height, arcade.color.YELLOW,tilt_angle)
 
 # Draw the right eye
-x = 400
+x = 350
 y = 350
 radius = 20
 
 arcade.draw_circle_filled(x, y, radius, arcade.color.BLACK)
 
 # Draw the left eye
-x = 150
+x = 250
 y = 350
 radius = 20
 arcade.draw_circle_filled(x, y, radius, arcade.color.BLACK)
 
+# Draw the left Nostril
+x = 290
+y = 290
+radius = 5
+arcade.draw_circle_filled(x,y,radius,arcade.color.BLACK)
+
+# Draw the rght Nostril
+x = 310
+y = 290
+radius = 5
+arcade.draw_circle_filled(x,y,radius,arcade.color.BLACK)
+
+
 # Draw the smile
 x = 300
-y = 350
+y = 250
 width = 50
 height = 50
 start_angle = 190
