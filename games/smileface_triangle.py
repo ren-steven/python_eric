@@ -18,47 +18,49 @@ arcade.set_background_color(arcade.color.BLUE)
 arcade.start_render()
 
 # Draw the face
-x = 300
-y = 300
-height =300
-width = 300
-tilt_angle = 0
-arcade.draw_triangle_filled(x, y,width ,height, arcade.color.YELLOW,tilt_angle)
+x1 = 300
+y1 = 500
+x2 = 500
+y2 = 100
+x3 = 100
+y3 = 100
+
+arcade.draw_triangle_filled(x1, y1, x2, y2, x3, y3, arcade.color.YELLOW)
 
 # Draw the right eye
 x = 350
-y = 350
+y = 300
 radius = 20
 
 arcade.draw_circle_filled(x, y, radius, arcade.color.BLACK)
 
 # Draw the left eye
 x = 250
-y = 350
+y = 300
 radius = 20
 arcade.draw_circle_filled(x, y, radius, arcade.color.BLACK)
-
-# Draw the left Nostril
-x = 290
-y = 290
-radius = 5
-arcade.draw_circle_filled(x,y,radius,arcade.color.BLACK)
-
-# Draw the rght Nostril
-x = 310
-y = 290
-radius = 5
-arcade.draw_circle_filled(x,y,radius,arcade.color.BLACK)
 
 
 # Draw the smile
 x = 300
-y = 250
+y = 260
 width = 50
 height = 50
 start_angle = 190
 end_angle = 350 
 arcade.draw_arc_outline(x, y, width, height, arcade.color.BLACK, start_angle, end_angle, 10)
+
+
+
+
+#draw line
+start_x = 250
+start_y = 250
+end_x = 350
+end_y = 250
+color = arcade.color.BLACK
+line_width = 10
+arcade.draw_line(start_x, start_y, end_x, end_y, color, line_width)
 
 # Finish drawing and display the result
 arcade.finish_render()
